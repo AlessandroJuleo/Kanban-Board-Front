@@ -29,6 +29,16 @@ const Board = () => {
 
   return (
     <div className="board-container">
+      {/* Botón de autenticación */}
+      <button className="auth-btn" onClick={handleAuth}>
+        {isLoggedIn ? "Logout" : "Login"}
+      </button>
+
+      {/* Botón para crear un nuevo ticket */}
+      <button className="new-ticket-btn" onClick={handleNewTicket}>
+        New Ticket
+      </button>
+
       <div className="kanban-board">
         <div className="kanban-column todo">
           <h2>Todo</h2>
